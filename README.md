@@ -1,3 +1,9 @@
+---
+title: "Archive"
+layout: default
+sitemap: false
+---
+
 {% assign row = site.data.vuln[0] %}
 {{ row | inspect }}
 
