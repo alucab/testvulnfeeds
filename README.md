@@ -1,3 +1,6 @@
+{% assign row = site.data.vuln[0] %}
+{{ row | inspect }}
+
 # Flat Data Demo - Bitcoin Price
 
 This demo is part of a larger Flat Data project created by [GitHub OCTO](https://octo.github.com/). Read more about the project [here](https://octo.github.com/projects/flat-data).
