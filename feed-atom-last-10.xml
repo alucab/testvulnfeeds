@@ -20,7 +20,7 @@ layout: none
 <entry>
   <title type="html"><![CDATA[{{ v.Name | cdata_escape }}]]></title>
   <link rel="alternate" type="text/html" href="https://nvd.nist.gov/vuln/detail/{{ v.CVE }}" />
-  <id>{{ v.CVE }}</id>
+  <id>https://nvd.nist.gov/vuln/detail/{{ v.CVE }}</id>
   <published>{{ v.Added }}</published>
   <updated>{{ v.Due }}</updated>
   <author>
