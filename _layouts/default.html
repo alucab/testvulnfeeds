@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+<head>
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{
+    site.title | escape }}</title>
+  <meta charset="{{ site.encoding }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ page.author | default: site.author | escape }}">
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css">
+</head>
+
+<body>
+  {{content}}
+  <div style="opacity: 1;
+  display: inline-block;
+  padding: 1em;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  max-width: 15%;
+  min-width: 110px;">
+    <a  class="paper-btn">
+      <img src="{{site.baseurl}}/assets/images/white_rune.png" class="no-border" alt="Random Unsplash">  
+  </a>
+  </div>
+</body>
+
+</html>
