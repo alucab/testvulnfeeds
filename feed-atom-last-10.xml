@@ -22,7 +22,7 @@ layout: none
   <link rel="alternate" type="text/html" href="https://nvd.nist.gov/vuln/detail/{{ v.CVE }}" />
   <id>{{ v.CVE }}</id>
   <published>{{ v.Added | date_to_xmlschema }}</published>
-  <updated>{{ v.Due | date_to_xmlschema }}</updated>{% endif %}
+  <updated>{{ v.Due | date_to_xmlschema }}</updated>
   <author>
     <name>{{ v.Vendor }}</name>
   </author>
