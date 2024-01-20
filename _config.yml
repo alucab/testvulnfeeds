@@ -1,6 +1,6 @@
 title: "Security Feeds"
 author: "Luca Barba"
-email:"alucab@alucab.org"
+email: "alucab@alucab.org"
 description: "And I assure you there is a mark on the door."
 permalink: /:title/
 lang: "en"
@@ -32,23 +32,12 @@ kramdown:
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
   # Use existing pygments syntax highlighting css
   css_class: 'highlight'
 
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-seo-tag
-  - jekyll-paginate
 
-include: ['_pages']
-
-paginate: 5
-paginate_path: /page:num/
-
-feed:
-  excerpt_only: true
 
 exclude:
   - Gemfile
