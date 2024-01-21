@@ -1,6 +1,6 @@
 ---
 title: "RSS Vulnerability Feeds"
-sub-title: "The less formal way of consuming vulnerabilities through RSS Feeds"
+sub-title: "A less formal way of consuming vulnerabilities"
 layout: centered
 ---
 

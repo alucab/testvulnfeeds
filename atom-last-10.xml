@@ -1,0 +1,13 @@
+---
+layout: none
+title: Atom Feed for Last 10 Published CISA KVEs with CVSS and EPSS Scores
+permalink: /atom-cisa-kve-last-10
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+{% include atom_header.xml data=page %}
+{% assign sortedvuln = site.data.vuln | reverse  %}
+{% for v in sortedvuln  limit:10%}
+  {% include atom_entry_vuln.xml vuln_data=v %}
+{% endfor %}
+</feed>

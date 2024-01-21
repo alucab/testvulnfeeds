@@ -1,0 +1,13 @@
+{% assign v = include.vuln_data %}
+<entry>
+  <title type="text/html"><![CDATA[{{ v.Name | cdata_escape }}]]></title>
+  <link rel="alternate" type="text/html" href="https://nvd.nist.gov/vuln/detail/{{ v.CVE }}" />
+  <id>https://nvd.nist.gov/vuln/detail/{{ v.CVE }}</id>
+  <published>{{ v.Added }}T00:00:00Z</published>
+  <updated>{{ v.Due }}T00:00:01Z</updated>
+  <author>
+    <name>{{ v.Vendor }}</name>
+  </author>
+  <summary type="text/html"><![CDATA[{{ v.Description | cdata_escape }}]]></summary>
+  <content type="application/json">{{ v | jsonify }}</content>
+</entry>
