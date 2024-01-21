@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Atom Feed for Last 10 Published CISA KVEs with CVSS and EPSS Scores
+title: Last 10 Published CISA KVEs with CVSS and EPSS Scores
 permalink: /atom-cisa-kve-last-10
 ---
 <?xml version="1.0" encoding="utf-8"?>
