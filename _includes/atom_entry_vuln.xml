@@ -8,6 +8,8 @@
   <author>
     <name>{{ v.Vendor }}</name>
   </author>
-  <summary type="text/html"><![CDATA[{{ v.Description | cdata_escape }}]]></summary>
-  <content type="application/json">{{ v | jsonify }}</content>
+  <summary type="html"><![CDATA[{{ v.Description | cdata_escape }}]]></summary>
+  <content type="xhtml">
+    {% include vuln_desc.html %}
+  </content>
 </entry>
