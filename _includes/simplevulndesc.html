@@ -1,0 +1,187 @@
+<div>
+    <br />
+    <center lang="en">
+       <div>
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
+             <tbody>
+                <tr>
+                   <td>
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                         <tbody>
+                            <tr>
+                               <td>
+                                  <h3>{{v.Vendor}} | {{v.Product}}</h3>
+                                  <h1>{{v.Name}}</h1>
+                                  <h2>{{v.CVE}}</h2>
+                                  <p>{{v.Description}}</p>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td>
+                                  <p>Action Mandated by CISA:</p>
+                                  <p>{{v.Action}}</p>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </td>
+                </tr>
+                <tr>
+                   <td>
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                         <tbody>
+                            <tr>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <p>KEV Details:</p>
+                                              <ul>
+                                                 <li><strong>Known Active Campaign:</strong> {{v.RansomwareCampaign}}</li>
+                                                 <li><strong>Due:</strong> {{v.Due}}</li>
+                                                 <li><strong>Added:</strong> {{v.Added}}</li>
+                                              </ul>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <table border="0" cellspacing="0" cellpadding="0">
+                                                 <tbody>
+                                                    <tr>
+                                                       <td><a href="{{v.Notes}}">+ Information </a></td>
+                                                    </tr>
+                                                 </tbody>
+                                              </table>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </td>
+                </tr>
+                <tr>
+                   <td>
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                         <tbody>
+                            <tr>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <p>CVSS Scores:</p>
+                                              <ul>
+                                                 <li><strong>CVSS 2:</strong>{{v.CVSS2}}</li>
+                                                 <li><strong>CVSS 3/3.1:</strong>{{v.CVSS3x}}</li>
+                                              </ul>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <table border="0" cellspacing="0" cellpadding="0">
+                                                 <tbody>
+                                                    <tr>
+                                                       <td><a href="https://nvd.nist.gov/vuln/detail/{{v.CVE}}">NVD </a></td>
+                                                    </tr>
+                                                 </tbody>
+                                              </table>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </td>
+                </tr>
+                <tr>
+                   <td>
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                         <tbody>
+                            <tr>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <p>EPSS Scores:</p>
+                                              <ul>
+                                                 <li><strong>EPSS:</strong> {{v.EPSS}}</li>
+                                                 <li><strong>Percentile:</strong> {{v.Percentile}}</li>
+                                              </ul>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                               <td width="50%">
+                                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                     <tbody>
+                                        <tr>
+                                           <td>
+                                              <table border="0" cellspacing="0" cellpadding="0">
+                                                 <tbody>
+                                                    <tr>
+                                                       <td><a href="https://api.first.org/data/v1/epss?cve={{v.CVE}}">EPSS </a></td>
+                                                    </tr>
+                                                 </tbody>
+                                              </table>
+                                           </td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </td>
+                </tr>
+             </tbody>
+          </table>
+          <img src="https://alucab.github.io/images/rune.png" alt="Security Wanderings by alucab" width="75" height="75" border="0" />
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
+             <tbody>
+                <tr>
+                   <td><a href="https://alucab.github.io">Security Wanderings by alucab </a></td>
+                </tr>
+             </tbody>
+          </table>
+       </div>
+       <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tbody>
+             <tr>
+                <td>
+                   <div>
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                         <tbody>
+                            <tr>
+                               <td>
+                                  <p>And I assure you there is a mark on the door—the usual on in the trade, or used to be. Burglar wants a good job, plenty of excitement and reasonable reward</p>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </center>
+ </div>
