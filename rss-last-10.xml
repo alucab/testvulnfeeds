@@ -1,0 +1,15 @@
+---
+layout: none
+title: Last 10 CISA KVEs with CVSS and EPSS Scores
+permalink: /rss-cisa-kve-last-10
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.cisa.gov/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+{% include rss_header.xml data=page %}
+{% assign sortedvuln = site.data.vuln | reverse  %}
+{% for v in sortedvuln  limit:10%}
+  {% include rss_entry_vuln.xml vuln_data=v %}
+{% endfor %}
+  </channel>
+</rss>
